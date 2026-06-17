@@ -180,6 +180,25 @@ a {
   color: var(--pink-soft);
 }
 
+.hero-date {
+  position: absolute;
+  top: calc(50% + clamp(198px, 23svh, 246px));
+  left: clamp(55px, calc(55px + (100vw - 1440px) * 0.24), 170px);
+  display: inline-grid;
+  min-height: 44px;
+  place-items: center;
+  margin: 0;
+  padding: 0 24px;
+  border: 1px solid rgba(255, 0, 168, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 248, 248, 0.72);
+  color: var(--pink);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+  box-shadow: 0 14px 36px rgba(255, 0, 168, 0.13);
+}
+
 .hero-person {
   position: absolute;
   z-index: 3;
@@ -786,6 +805,14 @@ fieldset {
     font-size: 80px;
   }
 
+  .hero-date {
+    top: calc(50% + 150px);
+    left: 28px;
+    min-height: 38px;
+    padding: 0 18px;
+    font-size: 15px;
+  }
+
   .hero h1 span:nth-child(2) {
     margin-left: 76px;
   }
@@ -977,6 +1004,16 @@ fieldset {
 
   .hero h1 span {
     max-width: calc(100vw - 24px);
+  }
+
+  .hero-date {
+    top: 262px;
+    left: 50%;
+    min-height: 32px;
+    padding: 0 14px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 13px;
   }
 
   .hero-person {
