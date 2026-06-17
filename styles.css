@@ -307,6 +307,7 @@ a {
 
 .survey-questions,
 .place-bow,
+.bring-clip,
 .gift-hearts {
   position: absolute;
   z-index: 0;
@@ -337,6 +338,17 @@ a {
 
 .gift-section .section-heading {
   min-height: clamp(330px, 45svh, 470px);
+}
+
+.bring-section .section-heading {
+  min-height: clamp(300px, 40svh, 420px);
+}
+
+.bring-clip {
+  top: clamp(176px, 28svh, 286px);
+  left: clamp(28px, 5vw, 98px);
+  width: clamp(120px, 11vw, 180px);
+  animation: star-rock-left 5.1s ease-in-out -0.7s infinite;
 }
 
 .gift-hearts {
@@ -743,6 +755,7 @@ fieldset {
   .hero-star,
   .survey-questions,
   .place-bow,
+  .bring-clip,
   .gift-hearts {
     animation: none;
   }
@@ -858,6 +871,17 @@ fieldset {
 
   .gift-section .section-heading {
     min-height: 320px;
+  }
+
+  .bring-section .section-heading {
+    min-height: 300px;
+  }
+
+  .bring-clip {
+    top: 146px;
+    right: auto;
+    left: 30px;
+    width: 142px;
   }
 
   .gift-hearts {
@@ -1060,6 +1084,17 @@ fieldset {
 
   .gift-section .section-heading {
     min-height: 104px;
+  }
+
+  .bring-section .section-heading {
+    min-height: 118px;
+  }
+
+  .bring-clip {
+    top: 14px;
+    right: 4px;
+    left: auto;
+    width: 88px;
   }
 
   .gift-hearts {
