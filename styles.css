@@ -991,7 +991,14 @@ fieldset {
   }
 
   .gift-layout {
+    min-height: calc(100svh - 84px);
     align-items: center;
+    position: relative;
+  }
+
+  .gift-section .section-heading {
+    position: absolute;
+    inset: 0 0 auto;
   }
 
   .survey-form,
@@ -1024,7 +1031,6 @@ fieldset {
   .map-placeholder {
     min-height: 286px;
     font-size: 36px;
-    pointer-events: none;
   }
 
   .map-placeholder > ymaps,
@@ -1048,6 +1054,7 @@ fieldset {
   }
 
   .gift-card {
+    align-self: center;
     justify-self: center;
     padding: 24px 20px;
   }
