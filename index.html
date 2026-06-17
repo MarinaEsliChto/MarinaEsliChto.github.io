@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Нэсти Липтон 24 годика</title>
+    <meta
+      name="description"
+      content="День рождения Нэсти Липтон: опрос по еде и напиткам, место встречи и меню."
+    >
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Навигация">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="header-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header-menu" id="header-menu">
+        <nav class="nav">
+          <a href="#survey">Опрос</a>
+          <a href="#place"><span>Где</span> пьем?</a>
+          <a href="#gift"><span>Что</span> дарить?</a>
+        </nav>
+        <a
+          class="wishlist-link"
+          href="https://followish.io/mywishlist/98vgm1tiuv62w4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Вишлист
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span>Нэ$ти</span>
+            <span>Липтон</span>
+            <span>24 годика</span>
+          </h1>
+        </div>
+
+        <img class="hero-person" src="img/Hero.png" alt="Нэсти в праздничной шапочке">
+        <img class="hero-star hero-star-left" src="img/stars.png" alt="" aria-hidden="true">
+        <img class="hero-star hero-star-right" src="img/stars.png" alt="" aria-hidden="true">
+      </section>
+
+      <section class="survey-section section-band" id="survey" aria-labelledby="survey-title">
+        <div class="section-shell survey-layout">
+          <div class="section-heading">
+            <p class="section-kicker">кто не ответ - не ест и не пьет</p>
+            <h2 id="survey-title">Опрос</h2>
+            <img class="survey-questions" src="img/questions.svg" alt="" aria-hidden="true">
+          </div>
+
+          <form class="survey-form" id="survey-form">
+            <fieldset>
+              <legend>Какое мясо?</legend>
+              <div class="option-grid">
+                <label class="option">
+                  <input type="checkbox" name="meat" value="Курица">
+                  <span>Курица</span>
+                </label>
+                <label class="option">
+                  <input type="checkbox" name="meat" value="Свинина">
+                  <span>Свинина</span>
+                </label>
+                <label class="option">
+                  <input type="checkbox" name="meat" value="Не ем мясо">
+                  <span>Не ем мясо</span>
+                </label>
+                <label class="option">
+                  <input type="checkbox" name="meat" value="Я буду просто бухать">
+                  <span>Я буду просто бухать</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Что пьешь?</legend>
+              <div class="option-grid">
+                <label class="option">
+                  <input type="checkbox" name="drink" value="Вино">
+                  <span>Вино</span>
+                </label>
+                <label class="option">
+                  <input type="checkbox" name="drink" value="Пиво">
+                  <span>Пиво</span>
+                </label>
+                <label class="option">
+                  <input type="checkbox" name="drink" value="Джин">
+                  <span>Джин</span>
+                </label>
+                <label class="option">
+                  <input type="checkbox" name="drink" value="Водка">
+                  <span>Водка</span>
+                </label>
+                <label class="option">
+                  <input type="checkbox" name="drink" value="Не пью">
+                  <span>Не пью</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="field">
+              <span>Аллергии или комментарий</span>
+              <textarea name="comment" rows="4" placeholder="Выебываемся, но не сильно"></textarea>
+            </label>
+
+            <div class="form-footer">
+              <button class="primary-button" type="submit">Отправить</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="place-section section-band" id="place" aria-labelledby="place-title">
+        <div class="section-shell place-layout">
+          <div class="section-heading">
+            <p class="section-kicker">40 км к гору</p>
+            <h2 id="place-title">Где пьем?</h2>
+            <img class="place-bow" src="img/bow.svg" alt="" aria-hidden="true">
+          </div>
+
+          <div class="route-panel">
+            <div class="map-placeholder" aria-label="Карта места встречи">
+              <script
+                type="text/javascript"
+                charset="utf-8"
+                async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d4888b9ff018b2e082b4af5186dd3a5149f69faaa23d8fd1fdc7c8ed86cdd63&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"
+              ></script>
+            </div>
+
+            <div class="route-card">
+              <div class="route-toggle" role="tablist" aria-label="Способ добраться">
+                <button class="is-active" type="button" role="tab" aria-selected="true" data-route="car">
+                  На машине
+                </button>
+                <button type="button" role="tab" aria-selected="false" data-route="walk">
+                  Без машины
+                </button>
+              </div>
+
+              <div class="route-text" id="route-text">
+                <h3>Маршрут для машины</h3>
+                <p>
+                  Просто тыкайте на кнопку ниже, включайте русский рэп и катитесь по построенному маршруту.
+                </p>
+                <a
+                  class="route-map-link"
+                  href="https://yandex.ru/maps/-/CPx~6QpV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Открыть в Яндекс Картах
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gift-section section-band" id="gift" aria-labelledby="gift-title">
+        <div class="section-shell gift-layout">
+          <div class="section-heading">
+            <p class="section-kicker">вашу любовь, конечно</p>
+            <h2 id="gift-title">Что дарить?</h2>
+            <img class="gift-hearts" src="img/hearts.svg" alt="" aria-hidden="true">
+          </div>
+
+          <div class="gift-card">
+            <div class="gift-copy">
+              <p>Я жду всех и каждого, вне зависимости от подарка или его отсутствия.</p>
+              <p>Если хотите сами придумать, как меня порадовать - газ.</p>
+              <p>Если вообще не хотите думать - можно просто помочь мне оплатить наше скромное торжество.</p>
+              <p>А для всех, кто молил меня о вишлисте - кнопочка с ссылкой на него чуть ниже.</p>
+            </div>
+            <a
+              class="gift-wishlist-link"
+              href="https://followish.io/mywishlist/98vgm1tiuv62w4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Вишлист
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
