@@ -962,7 +962,7 @@ fieldset {
   }
 
   .gift-section .section-heading {
-    min-height: 128px;
+    min-height: 104px;
   }
 
   .gift-hearts {
@@ -981,7 +981,7 @@ fieldset {
 
   .gift-section {
     align-items: center;
-    padding-block: 42px;
+    padding-block: 58px 36px;
   }
 
   .section-shell {
@@ -999,14 +999,10 @@ fieldset {
   }
 
   .gift-layout {
-    min-height: calc(100svh - 84px);
-    align-items: center;
-    position: relative;
-  }
-
-  .gift-section .section-heading {
-    position: absolute;
-    inset: 0 0 auto;
+    min-height: calc(100svh - 94px);
+    align-items: stretch;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 16px;
   }
 
   .survey-form,
