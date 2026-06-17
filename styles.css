@@ -912,9 +912,9 @@ fieldset {
   }
 
   .hero-person {
-    right: clamp(-292px, -72vw, -238px);
+    right: clamp(-268px, -64vw, -214px);
     bottom: -86px;
-    width: clamp(720px, 198vw, 790px);
+    width: clamp(660px, 184vw, 735px);
   }
 
   .hero-star-left {
