@@ -918,14 +918,17 @@ fieldset {
   }
 
   .hero-star-left {
-    display: none;
+    display: block;
+    top: 300px;
+    left: 48px;
+    width: 70px;
   }
 
   .hero-star-right {
-    top: 96px;
-    right: auto;
-    left: 24px;
-    width: 50px;
+    top: 274px;
+    right: 34px;
+    left: auto;
+    width: 82px;
   }
 
   .survey-section .section-heading {
