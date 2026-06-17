@@ -968,6 +968,11 @@ fieldset {
     padding: 74px 18px;
   }
 
+  .gift-section {
+    align-items: center;
+    padding-block: 42px;
+  }
+
   .section-shell {
     width: 100%;
   }
@@ -980,6 +985,10 @@ fieldset {
   .place-layout,
   .gift-layout {
     gap: 30px;
+  }
+
+  .gift-layout {
+    align-items: center;
   }
 
   .survey-form,
@@ -1036,6 +1045,7 @@ fieldset {
   }
 
   .gift-card {
+    justify-self: center;
     padding: 24px 20px;
   }
 
