@@ -919,16 +919,16 @@ fieldset {
 
   .hero-star-left {
     display: block;
-    top: 300px;
-    left: 48px;
-    width: 70px;
+    top: 270px;
+    left: 46px;
+    width: 48px;
   }
 
   .hero-star-right {
-    top: 274px;
-    right: 34px;
+    top: 242px;
+    right: 42px;
     left: auto;
-    width: 82px;
+    width: 58px;
   }
 
   .survey-section .section-heading {
