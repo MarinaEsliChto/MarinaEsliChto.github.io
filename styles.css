@@ -669,7 +669,6 @@ fieldset {
 
   html,
   body {
-    overflow-y: auto;
     overscroll-behavior-y: auto;
     touch-action: pan-y;
   }
@@ -787,14 +786,15 @@ fieldset {
 }
 
 @media (max-width: 640px) {
-  html {
-    scroll-snap-type: y proximity;
+  html,
+  body {
+    scroll-snap-type: y mandatory;
   }
 
   .hero,
   .section-band {
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    scroll-snap-stop: always;
   }
 
   .site-header {
