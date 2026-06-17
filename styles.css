@@ -352,6 +352,7 @@ a {
 
 .survey-layout,
 .place-layout,
+.bring-layout,
 .gift-layout {
   display: grid;
   grid-template-columns: minmax(300px, 0.72fr) minmax(620px, 1.38fr);
@@ -361,6 +362,7 @@ a {
 
 .survey-form,
 .route-card,
+.bring-card,
 .gift-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -612,6 +614,63 @@ fieldset {
   box-shadow: 0 18px 42px rgba(255, 0, 168, 0.28);
 }
 
+.bring-section {
+  background: var(--bg);
+}
+
+.bring-card {
+  width: min(940px, 100%);
+  padding: clamp(26px, 3.2vw, 44px);
+}
+
+.bring-list {
+  display: grid;
+  gap: clamp(14px, 1.8vh, 20px);
+  margin: 0;
+  padding: 0;
+  counter-reset: bring;
+  list-style: none;
+}
+
+.bring-item {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  padding-left: 56px;
+  counter-increment: bring;
+}
+
+.bring-item::before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--pink);
+  color: #fff;
+  content: counter(bring);
+  font-size: 16px;
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(255, 0, 168, 0.2);
+}
+
+.bring-item h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(18px, 1.25vw, 22px);
+  line-height: 1.15;
+}
+
+.bring-item p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: clamp(15px, 1vw, 17px);
+  line-height: 1.42;
+}
+
 .gift-section {
   background: var(--bg);
 }
@@ -783,6 +842,7 @@ fieldset {
 
   .survey-layout,
   .place-layout,
+  .bring-layout,
   .gift-layout,
   .route-panel {
     grid-template-columns: 1fr;
@@ -994,6 +1054,7 @@ fieldset {
 
   .survey-layout,
   .place-layout,
+  .bring-layout,
   .gift-layout {
     gap: 30px;
   }
@@ -1006,8 +1067,33 @@ fieldset {
   }
 
   .survey-form,
-  .route-card {
+  .route-card,
+  .bring-card {
     padding: 20px;
+  }
+
+  .bring-list {
+    gap: 14px;
+  }
+
+  .bring-item {
+    gap: 5px;
+    padding-left: 44px;
+  }
+
+  .bring-item::before {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .bring-item h3 {
+    font-size: 17px;
+  }
+
+  .bring-item p {
+    font-size: 14px;
+    line-height: 1.36;
   }
 
   .option-grid {
