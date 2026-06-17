@@ -4,7 +4,7 @@ const routeCopy = {
   car: {
     title: "Маршрут для машины",
     text: "Просто тыкайте на кнопку ниже, включайте русский рэп и катитесь по построенному маршруту.",
-    link: "https://yandex.ru/maps/-/CPx~6QpV",
+    link: "https://yandex.ru/maps/-/CTAEbO8a",
     linkText: "Открыть в Яндекс Картах",
   },
   walk: {
