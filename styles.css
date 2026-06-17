@@ -583,6 +583,14 @@ fieldset {
   gap: 18px;
 }
 
+.route-text p a {
+  color: var(--pink);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .route-map-link {
   display: grid;
   width: min(280px, 100%);
@@ -1050,7 +1058,7 @@ fieldset {
   }
 
   .route-text {
-    min-height: 198px;
+    min-height: 258px;
   }
 
   .gift-card {

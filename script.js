@@ -9,7 +9,7 @@ const routeCopy = {
   },
   walk: {
     title: "Без машины",
-    text: "Я опишу маршрут позже.",
+    text: `От Дыбенко до озера идут маршрутки и автобусы <a href="https://wikiroutes.info/spb?routes=742" target="_blank" rel="noopener noreferrer">№ 469</a>, <a href="https://wikiroutes.info/spb?routes=5671" target="_blank" rel="noopener noreferrer">511</a>, <a href="https://wikiroutes.info/spb?routes=785" target="_blank" rel="noopener noreferrer">565</a> и <a href="https://wikiroutes.info/spb?routes=787" target="_blank" rel="noopener noreferrer">579</a>. Выйти нужно будет остановке «26 км Мурманского шоссе», около лукойловской заправки. А дальше пешком или на такси (если повезет его вызвать там).`,
   },
 };
 
